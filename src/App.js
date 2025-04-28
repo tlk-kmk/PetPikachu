@@ -7,7 +7,9 @@ function App() {
     <div className="App">
       <header className="App-header">
         <img className="tlk-logo" src="/tlk-logo.svg" alt="logo"></img>
-        <MyRiveAnimation />
+        <div class="rive-container"> {/* Added border for visualization */}
+          <MyRiveAnimation />
+        </div>
       </header>
     </div>
   );

@@ -15,8 +15,9 @@
 
 .App-header {
   background-color: #12091D;
-  min-height: 100vh;
+  height: 100vh;
   width: 100vw;
+  overflow: hidden;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -48,8 +49,31 @@
 }
 
 body {
-
+  padding: 0;
+  margin: 0;
   height: 100vh;
+  width: 100vw;
   overflow: hidden;
 
+}
+
+/* Default styles for larger screens (you can adjust the breakpoint) */
+.rive-container {
+  width: 1920px;
+  height: auto;
+  aspect-ratio: 1 / 1; /* Adjust to your animation's aspect ratio */
+}
+
+/* Styles for tablets (example breakpoint: 768px and below) */
+@media (max-width: 768px) {
+  .rive-container {
+    width: 1200px;
+}
+}
+
+/* Styles for smaller mobile devices (example breakpoint: 450px and below) */
+@media (max-width: 450px) {
+  .rive-container {
+    width: 900px;
+  }
 }
