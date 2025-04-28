@@ -46,3 +46,10 @@
   width: 32px;
 
 }
+
+body {
+
+  height: 100vh;
+  overflow: hidden;
+
+}
