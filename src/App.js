@@ -1,22 +1,13 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import MyRiveAnimation from './MyRiveAnimation.jsx'; // Explicitly include the .jsx extension
+import './App.css'; // Or any other CSS imports you might have
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <img className="tlk-logo" src="/tlk-logo.svg" alt="logo"></img>
+        <MyRiveAnimation />
       </header>
     </div>
   );
